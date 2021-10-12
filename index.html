@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Ramírez Araya</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+    rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+    rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+    rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+    rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="contenedor">
+
+        <div class="perfil">
+            <span class="material-icons-outlined" id="perfil">person</span>
+
+            <div class="Botones row">
+                    <button class="btn btn-primary" id="boton" type="button" onclick="mostrarFormulario()" >editar</button>
+            </div>
+            
+
+            <div class="signosVitales">
+
+                <h2>Ultimos signos Vitales</h2>
+                    <div class="signos">   
+                        <p><span class="material-icons-outlined">
+                            arrow_back_ios
+                            </span></p>
+                        <p>Estatura</p>
+                        <p>1.75</p>
+                        <p><span class="material-icons-outlined">
+                            arrow_back_ios
+                            </span></p>
+                        <p>Peso</p>
+                        <p>70 Kg</p>
+                        <p><span class="material-icons-outlined">
+                            arrow_back_ios
+                            </span></p>
+                        <p>Frecuencia cardiaca</p>
+                        <p>70</p>
+                    </div>
+            </div>
+        </div>
+    
+    
+        
+    
+        <div class="container" id="container">
+
+    
+            <form id="formulario" class="formulario">
+                <h2>Información</h2>
+                <div class="mb-3" id="grupo__nombre">
+                    <label>Nombre Completo</label>
+                    <input type="text" id="nombre" class="formulario_input" name="nombre" placeholder="Nombre Completo" required >
+               </div>
+    
+               <div class="mb-3" id="grupo__edad">
+                    <label>Edad</label>
+                    <input type="number" id="edad" class="formulario_input" name="edad" placeholder="edad" required>
+                </div>
+    
+                <div class="mb-3" id="grupo__genero">
+                    <label >Genero</label>
+                    <select name="genero">
+                        <option disabled="">Sin definir</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                      </select>
+                </div>
+    
+                <div class="mb-3" id="grupo__fecha">
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" id="Fecha" class="formulario_input" name="fecha" required>
+                </div>
+    
+                <div class="mb-3"  id="grupo__correo">
+                    <label>Correo Electronico</label>
+                    <input type="email" id="correo" class="formulario_input" name="correo" placeholder="correo" required >
+                </div>
+    
+                <div class="mb-3" id="grupo__celular">
+                    <label> Celular</label>
+                    <input type="number" id="celular" class="formulario_input" name="celular" placeholder="Numero de celular" required>
+                </div>  
+    
+    
+                <div class="mb-3" id="grupo__rut">
+                    <label>Rut-Digito</label>
+                    <input type="text" id="rut" class="formulario_input" name="rut" placeholder="Rut sin punto" required >
+                </div>
+    
+                <div class="mb-3" id="grupo__region">
+                    <label >Region</label>
+                    <select name="region">
+                        <option disabled="">Sin definir</option>
+                        <option>Valparaiso</option>
+                        <option>Metropolitana</option>
+                      </select>
+                </div>
+    
+    
+                <div class="mb-3" class="Botones row">
+                    <div class="col-3">
+                        <button class="btn btn-primary" type="submit">Actualizar</button>
+                    </div>
+            </form>
+        </div>
+         <!-- antecedentes clinicos -->
+         <div class="antecedentes">
+            <h2>Antecedentes Clinicos <button class="btn btn-primary" id="boton" type="button" onclick="AgregarAntecedentes()" ><span class="material-icons-outlined">add</span></button> </h2>
+        </div>
+
+        <div class="signosVitales">
+
+            <div class="casos">
+                <p>Hospitalizado por bronquitis</p>
+                <p>fecha: 23 / 05 / 2005</p>
+            </div>
+
+            <div class="casos">
+                <p>Hospitalizado por intoxicacion</p>
+                <p>fecha: 23 / 05 / 2008</p>
+            </div>
+
+            <div class="casos">
+                <p>Hospitalizado XXXXXX</p>
+                <p>fecha: XXXXXXXX</p>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="motivoHospital">
+
+            <div class="motivoform">
+                <div class="mb-3"  id="grupo__motivo">                 
+                    <input type="text" id="motivo" class="formulario_input" name="motivo" placeholder="motivo hospitalizacion" required >
+                </div>
+            
+                <div class="mb-3" id="grupo__fecha">
+                    <input type="date" id="Fecha" class="formulario_input" name="fecha" required>
+                </div>
+
+                <div class="mb-3" class="Botones row">
+                    <div class="col-3">
+                        <button class="btn btn-primary" type="submit">Crear</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="js/inicio.js"></script>
+</body>
+</html>

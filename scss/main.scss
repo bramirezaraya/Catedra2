@@ -1,0 +1,101 @@
+body{
+    top: 0%;
+    bottom: 0%;
+}
+
+.perfil{
+    margin: 5px;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 700px;
+}
+
+#perfil{
+    font-size: 200px;
+    align-content: center;
+    align-items: center;
+    border: black 2px solid;
+    margin-left: 80px;
+}
+
+
+.signos{
+    display: grid;
+    border: black 3px solid;
+    grid-template-columns: repeat(3,1fr);
+    height: 400px;
+    margin-top: 40px;
+}
+
+
+.signos p{
+    margin-bottom: 0%;
+    height: 100px;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+
+.signosVitales{
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+
+
+.container{
+    height: auto;
+    width: 1000px;
+    margin-top: 300px;
+}
+
+.formulario{
+    align-content: center;
+    padding-left: 30px;
+    padding-top: 30px;
+    display: none;
+}
+
+.formulario-activo{
+    display: block;
+}
+
+label{
+    font-weight: 700;
+}
+
+
+.contenedor{
+    display: flex;
+}
+
+
+#boton{
+    width: 70px;
+}
+
+
+.motivoHospital{
+    border: black 2px solid;
+    width: 700px;
+    display: none;
+}
+
+.motivoHospital-activo{
+    display: block;
+}
+
+.motivoform{
+    margin: 10px;
+}
+
+
+
+.casos{
+    border: black 2px solid;
+    margin: 20px;
+    padding-left: 10px;
+}
